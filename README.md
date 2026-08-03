@@ -23,7 +23,7 @@ SlowScape/
 │   ├── assets/
 │   │   ├── css/styles.css             # 全局样式 + 各场景氛围调色板
 │   │   ├── js/                        # app.js auth.js data.js pages.js starfield.js ui.js ...
-│   │   └── img/{ocean,aurora,land}/   # 图像资源
+│   │   └── img/{aurora,land}/         # 图像资源（aurora 用于登录页 / land 用于落地页背景；watch 页星空由 starfield.js 程序化渲染，无图片依赖）
 │   └── R2V_REFERENCE_SELECTION_GUIDE.md
 └── design-tokens.json       # 设计系统 Token（Design Token 单一来源）
 ```
