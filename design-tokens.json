@@ -1,0 +1,166 @@
+{
+  "tokenFormatVersion": "1.0",
+  "meta": {
+    "product": "慢境 SlowScape",
+    "version": "0.1.0",
+    "specSection": "8",
+    "designLanguage": "自然主义 UI (Biophilic) + Calm 式克制",
+    "iconLibrary": "lucide",
+    "register": { "app": "product", "landing": "brand" },
+    "designAxes": { "DESIGN_VARIANCE": 5, "MOTION_INTENSITY": 4, "VISUAL_DENSITY": 2 },
+    "videoAsset": {
+      "note": "视频资产三件套由生成层 Worker 强制产出，前端严格按此顺序消费",
+      "poster": "首帧模糊低码率静帧(几KB)，打开秒显",
+      "preview": "极低码率短视频(480p/1-2Mbps)，立即起播",
+      "master": "正式720p/1080p，后台渐进加载，就绪无感替换"
+    },
+    "p0Compliance": {
+      "noEmojiIcons": true,
+      "noPurplePinkGradient": true,
+      "noHardcodedColorInComponents": true,
+      "noGenericHero": true,
+      "noPlaceholderCopy": true
+    }
+  },
+  "icon": {
+    "library": { "value": "lucide", "type": "string" },
+    "packageFlutter": { "value": "lucide_dart", "type": "string" },
+    "packageWeb": { "value": "lucide", "type": "string" },
+    "strokeWidth": { "value": 1.5, "type": "number" },
+    "sizes": {
+      "inline": { "value": 16, "type": "dimension" },
+      "button": { "value": 20, "type": "dimension" },
+      "standalone": { "value": 24, "type": "dimension" }
+    }
+  },
+  "themes": {
+    "mist": {
+      "color": {
+        "bg": { "value": "#F4F2EC", "type": "color", "layer": "A1-identity" },
+        "surface": { "value": "#FBFAF6", "type": "color", "layer": "A1-identity" },
+        "surfaceWarm": { "value": "#EDE9DF", "type": "color", "layer": "B-slot" },
+        "fg": { "value": "#2E2A24", "type": "color", "layer": "A1-identity" },
+        "fg2": { "value": "#5C554B", "type": "color", "layer": "B-slot" },
+        "muted": { "value": "#8A8175", "type": "color", "layer": "A1-identity" },
+        "meta": { "value": "#A89E90", "type": "color", "layer": "B-slot" },
+        "border": { "value": "#E2DDD2", "type": "color", "layer": "A1-identity" },
+        "borderSoft": { "value": "#ECE8DF", "type": "color", "layer": "B-slot" },
+        "accent": { "value": "#5B7B7A", "type": "color", "layer": "A1-identity" },
+        "accent2": { "value": "#7C9DB0", "type": "color", "layer": "C-extension" },
+        "accentOn": { "value": "#FBFAF6", "type": "color", "layer": "A2" },
+        "accentHover": { "value": "#4C6A69", "type": "color", "layer": "A2" },
+        "accentActive": { "value": "#425D5C", "type": "color", "layer": "A2" },
+        "success": { "value": "#7E9B6E", "type": "color", "layer": "A2" },
+        "warn": { "value": "#C9A66B", "type": "color", "layer": "A2" },
+        "danger": { "value": "#B5654A", "type": "color", "layer": "A2" },
+        "stageBg": { "value": "#0C0F12", "type": "color", "layer": "A2" }
+      },
+      "elevation": {
+        "elevFlat": { "value": "none", "type": "shadow" },
+        "elevRing": { "value": "0 0 0 1px #E2DDD2", "type": "shadow" },
+        "elevRaised": { "value": "0 1px 2px rgba(46,42,36,0.04), 0 4px 12px rgba(46,42,36,0.06)", "type": "shadow" }
+      },
+      "focusRing": { "value": "0 0 0 3px rgba(91,123,122,0.35)", "type": "shadow" }
+    },
+    "deep": {
+      "color": {
+        "bg": { "value": "#14181C", "type": "color", "layer": "A1-identity" },
+        "surface": { "value": "#1C2127", "type": "color", "layer": "A1-identity" },
+        "surfaceWarm": { "value": "#232A30", "type": "color", "layer": "B-slot" },
+        "fg": { "value": "#E7E4DC", "type": "color", "layer": "A1-identity" },
+        "fg2": { "value": "#B5B0A4", "type": "color", "layer": "B-slot" },
+        "muted": { "value": "#7E7A6F", "type": "color", "layer": "A1-identity" },
+        "meta": { "value": "#5E5B52", "type": "color", "layer": "B-slot" },
+        "border": { "value": "#2C333A", "type": "color", "layer": "A1-identity" },
+        "borderSoft": { "value": "#242B31", "type": "color", "layer": "B-slot" },
+        "accent": { "value": "#6FA3A0", "type": "color", "layer": "A1-identity" },
+        "accent2": { "value": "#8FB3C7", "type": "color", "layer": "C-extension" },
+        "accentOn": { "value": "#14181C", "type": "color", "layer": "A2" },
+        "accentHover": { "value": "#5C8E8B", "type": "color", "layer": "A2" },
+        "accentActive": { "value": "#517E7B", "type": "color", "layer": "A2" },
+        "success": { "value": "#8FB07C", "type": "color", "layer": "A2" },
+        "warn": { "value": "#D4B277", "type": "color", "layer": "A2" },
+        "danger": { "value": "#C77B62", "type": "color", "layer": "A2" },
+        "stageBg": { "value": "#0C0F12", "type": "color", "layer": "A2" }
+      },
+      "elevation": {
+        "elevFlat": { "value": "none", "type": "shadow" },
+        "elevRing": { "value": "0 0 0 1px #2C333A", "type": "shadow" },
+        "elevRaised": { "value": "0 1px 2px rgba(0,0,0,0.30), 0 4px 16px rgba(0,0,0,0.36)", "type": "shadow" }
+      },
+      "focusRing": { "value": "0 0 0 3px rgba(111,163,160,0.40)", "type": "shadow" }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "display": { "value": "Quicksand, 'Noto Sans SC', sans-serif", "type": "fontFamily" },
+      "body": { "value": "Inter, 'Noto Sans SC', sans-serif", "type": "fontFamily" },
+      "mono": { "value": "'JetBrains Mono', monospace", "type": "fontFamily" }
+    },
+    "fontSize": {
+      "xs": { "value": "0.75rem", "type": "dimension" },
+      "sm": { "value": "0.875rem", "type": "dimension" },
+      "base": { "value": "1rem", "type": "dimension" },
+      "lg": { "value": "1.125rem", "type": "dimension" },
+      "xl": { "value": "1.25rem", "type": "dimension" },
+      "2xl": { "value": "1.5rem", "type": "dimension" },
+      "3xl": { "value": "2rem", "type": "dimension" },
+      "4xl": { "value": "2.5rem", "type": "dimension" }
+    },
+    "fontWeight": {
+      "read": { "value": 400, "type": "fontWeight" },
+      "emphasize": { "value": 510, "type": "fontWeight" },
+      "announce": { "value": 590, "type": "fontWeight" }
+    },
+    "lineHeight": {
+      "tight": { "value": 1.15, "type": "number" },
+      "body": { "value": 1.6, "type": "number" },
+      "relaxed": { "value": 1.7, "type": "number" }
+    },
+    "letterSpacing": {
+      "display": { "value": "-0.01em", "type": "dimension" },
+      "caps": { "value": "0.06em", "type": "dimension" },
+      "body": { "value": "0", "type": "dimension" }
+    }
+  },
+  "spacing": {
+    "1": { "value": "4px", "type": "dimension" },
+    "2": { "value": "8px", "type": "dimension" },
+    "3": { "value": "12px", "type": "dimension" },
+    "4": { "value": "16px", "type": "dimension" },
+    "5": { "value": "20px", "type": "dimension" },
+    "6": { "value": "24px", "type": "dimension" },
+    "7": { "value": "32px", "type": "dimension" },
+    "8": { "value": "40px", "type": "dimension" },
+    "9": { "value": "48px", "type": "dimension" },
+    "10": { "value": "64px", "type": "dimension" },
+    "11": { "value": "80px", "type": "dimension" }
+  },
+  "sectionY": {
+    "desktop": { "value": "80px", "type": "dimension" },
+    "tablet": { "value": "48px", "type": "dimension" },
+    "phone": { "value": "32px", "type": "dimension" }
+  },
+  "radius": {
+    "sm": { "value": "8px", "type": "dimension" },
+    "md": { "value": "12px", "type": "dimension" },
+    "lg": { "value": "16px", "type": "dimension" },
+    "pill": { "value": "9999px", "type": "dimension" }
+  },
+  "motion": {
+    "fast": { "value": "150ms", "type": "duration" },
+    "base": { "value": "200ms", "type": "duration" },
+    "slow": { "value": "400ms", "type": "duration" },
+    "breathPhase": { "value": "4000ms", "type": "duration" },
+    "cloudDrift": { "value": "800ms", "type": "duration" },
+    "roamFade": { "value": "1600ms", "type": "duration" },
+    "easeStandard": { "value": "cubic-bezier(0.2, 0, 0, 1)", "type": "cubicBezier" },
+    "easeSoft": { "value": "cubic-bezier(0.4, 0, 0.2, 1)", "type": "cubicBezier" }
+  },
+  "container": {
+    "max": { "value": "1080px", "type": "dimension" },
+    "gutterDesktop": { "value": "24px", "type": "dimension" },
+    "gutterTablet": { "value": "16px", "type": "dimension" },
+    "gutterPhone": { "value": "12px", "type": "dimension" }
+  }
+}

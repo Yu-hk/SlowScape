@@ -1,0 +1,25 @@
+# ---------- Build outputs (Maven) ----------
+backend/target/
+backend/BOOT-INF/
+
+# ---------- Local databases (H2 dev) ----------
+*.mv.db
+*.trace.db
+*.lock.db
+
+# ---------- IDE ----------
+.idea/
+*.iml
+
+# ---------- WorkBuddy project memory ----------
+.workbuddy/
+
+# ---------- Dev scratch / temp scripts ----------
+_trash_dev/
+
+# ---------- OS / editor ----------
+.DS_Store
+Thumbs.db
+
+# ---------- Node (future-proofing) ----------
+node_modules/

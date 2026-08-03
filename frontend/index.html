@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="mist">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>漫溯 · 舒缓风景</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Inter:wght@400;500&family=Noto+Sans+SC:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- SPA 外壳：顶部栏 / 视图容器 / 底部或侧边导航 由 app.js 注入与渲染 -->
+  <div id="app-shell">
+    <header id="topbar"></header>
+    <main id="view"></main>
+    <nav id="tabbar"></nav>
+  </div>
+
+  <!-- 加载顺序：图标 → Mock 数据 → API 客户端 → UI 助手 → 页面 → 启动器 -->
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/starfield.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/admin.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
